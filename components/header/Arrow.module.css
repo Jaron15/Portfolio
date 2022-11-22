@@ -1,0 +1,38 @@
+.arrow {
+    font-size: 2vh;
+    flex: auto;
+    width: 10vh;
+    height:fit-content;
+    color: white;
+}
+
+.containerContainer {
+    background-color: red;
+    width: 20vh;
+    height:50%
+}
+
+.Arrowcontainer {   
+    
+}
+
+.topArrow {
+    /* position: absolute; */
+    /* bottom: 70vh; */
+    margin:auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botArrow {
+    /* position: absolute; */
+    /* bottom: 67vh; */
+    margin:auto;
+    left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -8vh;
+}
