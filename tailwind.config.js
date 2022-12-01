@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "drumclass": "url(/drumclass.jpg)",
+        "blackbearbakery": "url(/blackbearbakery.jpg)",
+        "restaurantsearch": "url(/restaurantsearch.jpg)",
+      }
+    },
     fontFamily: {
       round: ['Poppins', 'sans-serif']
     }

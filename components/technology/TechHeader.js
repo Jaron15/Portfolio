@@ -11,8 +11,8 @@ function TechHeader() {
     target:textRef
   });
 
-  const xPosAnim = useTransform(scrollYProgress, [1, .6, .3, 0], [ -250, 0, 0, 250, ])
-  const xPosAnimLine = useTransform(scrollYProgress, [1, .6, .3, 0], [ 250, 0, 0, -250, ])
+  const xPosAnim = useTransform(scrollYProgress, [1, .6, .2, 0], [ -250, 0, 0, 250, ])
+  const xPosAnimLine = useTransform(scrollYProgress, [1, .6, .2, 0], [ 250, 0, 0, -250, ])
   const scrollOpacity = useTransform(scrollYProgress, [1, .7, .3, 0 ], [0, 1, 1, 0])
 
   return (
@@ -26,7 +26,7 @@ function TechHeader() {
       <motion.div className="bg-cyan-800 w-56 " style={{x:xPosAnimLine, opacity: scrollOpacity,  height: 3, }}></motion.div>
       </div>
       <TechIcons />
-      <div style={{height: 1000, }}></div>
+      <div style={{}}></div>
       </Fragment>
 
   )

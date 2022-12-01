@@ -13,7 +13,7 @@ function TechIcons() {
         <img src='/redux.svg' alt='Redux' className='p-2 md:p-4'/>
         <img src='/nodejs.svg' alt='Node.js' className='p-2 md:p-4'/>
         <img src='/mongodb.svg'alt='MongoDB' className='p-2 md:p-4'/>
-        <img src='/css.svg' alt='CSS  ' className='p-2 md:p-4'/>
+        <img src='/css.svg' alt='CSS' className='p-2 md:p-4'/>
         {/* <img src='/javascript.svg' className='p-2 md:p-4'/> */}
         </div>
     </div>
