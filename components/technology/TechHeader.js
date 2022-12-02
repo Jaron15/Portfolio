@@ -23,7 +23,7 @@ function TechHeader() {
       className="text-white text-2xl font-round "
       style={{x:xPosAnim, opacity: scrollOpacity}}
       >Technologies</motion.h1>
-      <motion.div className="bg-cyan-800 w-56 " style={{x:xPosAnimLine, opacity: scrollOpacity,  height: 3, }}></motion.div>
+      <motion.div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-56 " style={{x:xPosAnimLine, opacity: scrollOpacity,  height: 3, }}></motion.div>
       </div>
       <TechIcons />
       <div style={{}}></div>

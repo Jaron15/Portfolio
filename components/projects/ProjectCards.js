@@ -17,7 +17,7 @@ const projectDetailsArray = [
     {
         project: 'blackbearbakery',
         name: 'Black Bear Bakery',
-        description: 'A full stack e-commerce application for a local colorado bakery. It uses MongoDB and GraphQL on the backend and a React-Bootstrap frontend.',
+        description: 'A full stack e-commerce application for a local Colorado bakery. It uses MongoDB and GraphQL on the backend and a React-Bootstrap frontend.',
         githubLink: 'https://github.com/nicoguarino/Black-Bear-Bakery',
         deployedLink: 'https://black-bear-bakery.herokuapp.com'
     },
