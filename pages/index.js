@@ -1,8 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import React from 'react'
 import Links from '../components/footer/Links'
 import Arrow from '../components/header/Arrow'
-import Header from '../components/Header/Header'
+import Header from '../components/header/Header'
 import Projects from '../components/projects/Projects'
 import TechHeader from '../components/technology/TechHeader'
 
