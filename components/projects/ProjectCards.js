@@ -2,6 +2,7 @@ import { useAnimation, motion } from 'framer'
 import React, {useEffect, useState} from 'react'
 import { useInView } from 'react-intersection-observer';
 
+
 const squareVariants = { 
     visible: {opacity: 1, scale: 1, transition: {duration: 1.25}},
     hidden: {opacity: 0, scale: 0}
@@ -17,7 +18,7 @@ const projectDetailsArray = [
     {
         project: 'blackbearbakery',
         name: 'Black Bear Bakery',
-        description: 'A full stack e-commerce application for a local Colorado bakery. It uses MongoDB and GraphQL on the backend and a React-Bootstrap frontend.',
+        description: 'A full stack e-commerce bakery app. MongoDB and GraphQL on the backend and a React-Bootstrap frontend.',
         githubLink: 'https://github.com/nicoguarino/Black-Bear-Bakery',
         deployedLink: 'https://black-bear-bakery.herokuapp.com'
     },
@@ -48,7 +49,8 @@ function ProjectCards(props) {
     showInfo(!info)
    }
    const projectDetails = projectDetailsArray.find((proj) => proj.project === selectedProject)
-   
+   const background = 'bg-' + selectedProject
+   console.log(background);
 
   return (
     <div className='flex justify-center flex-col items-center mt-10'>
@@ -58,16 +60,16 @@ function ProjectCards(props) {
     animate={controls}
     initial="hidden"
     variants={squareVariants}
-    className={` w-11/12 md:w-9/12 lg:w-7/12 h-56 md:h-96 flex justify-center items-center rounded-md mt-5 mb-5 bg-${selectedProject} bg-center bg-cover bg-no-repeat md:bg-contain `}>
-
+    className={`xs:h-80 w-11/12 md:w-9/12 lg:w-7/12 h-56 md:h-96 flex justify-center items-center rounded-md mt-5 mb-5 ${background} bg-center bg-cover bg-no-repeat sm:bg-contain md:bg-contain `}>
         { info && 
-        <div className='bg-black/80 w-full  h-full text-white flex justify-center items-center flex-col '>
+        <div className='bg-black/80 w-full  h-full text-white flex justify-center items-center flex-col'>
 
-            <div className='mb-5'>
+            <div className='mb-5 underline underline-offset-2 font-semibold	
+'>
                 {projectDetails.name}    
             </div>
 
-            <div className=' text-center mb-4 w-10/12 md:w-9/12 lg:w-7/12 xl:w-2/5 flex'>
+            <div className=' md:px-6 text-center mb-4 w-10/12 sm:w-3/5 md:w-8/12 lg:w-7/12 xl:w-2/5 flex'>
                 {projectDetails.description}
             </div>
 

@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import {motion, useAnimation} from 'framer-motion';
 import {useInView} from 'react-intersection-observer'
 
 
 function TechIcons() {
+    
     const container = {
         hidden: { rotate: 0 },
         show: {

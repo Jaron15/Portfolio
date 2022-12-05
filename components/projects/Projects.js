@@ -13,7 +13,7 @@ function Projects() {
     <ProjectCards project='drumclass' />
     <ProjectCards project='blackbearbakery' />
     <ProjectCards project='restaurantsearch'/>
-      <div style={{ height: 1000 }}></div>
+      <div style={{ height: 200 }}></div>
     </Fragment>
   );
 }

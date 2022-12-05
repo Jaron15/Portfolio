@@ -27,7 +27,7 @@ function HeaderText() {
     transition={{staggerChildren: 0.8}} className='w-fit self-center'>
       <motion.div animate={topTextAnimate} className='text-white w-full text-left text-7xl md:text-8xl lg:text-9xl mx-auto'>Hi</motion.div>
       <motion.div animate={textAnimate} className='text-white w-full text-left text-7xl md:text-8xl lg:text-9xl mx-auto'>I&apos;m Jaron</motion.div>
-      <motion.div animate={bottomTextAnimate} className='text-neutral-400 w-full text-left text-4xl md:text-5xl lg:text-6xl mx-auto'>Front End Developer</motion.div>
+      <motion.div animate={bottomTextAnimate} className='text-neutral-400 w-full text-left text-4xl md:text-5xl lg:text-6xl mx-auto whitespace-nowrap'>Front End Developer</motion.div>
       </motion.div>
       </div>
   ) 

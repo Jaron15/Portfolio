@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Links from '../components/footer/Links'
 import Arrow from '../components/header/Arrow'
 import Header from '../components/Header/Header'
 import Projects from '../components/projects/Projects'
@@ -13,6 +14,7 @@ export default function Home() {
     <Arrow />
     <TechHeader />
     <Projects />
+    <Links />
   </div>
   )
 }
