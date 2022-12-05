@@ -26,7 +26,7 @@ const projectDetailsArray = [
         project: 'restaurantsearch',
         name: 'Restaurant Search',
         description: 'A React Native app that uses the yelp API to search for restaurants ',
-        githubLink: 'https://github.com/nicoguarino/Black-Bear-Bakery',
+        githubLink: 'https://github.com/Jaron15/restaurant-search',
         
     },
 ]
@@ -49,8 +49,8 @@ function ProjectCards(props) {
     showInfo(!info)
    }
    const projectDetails = projectDetailsArray.find((proj) => proj.project === selectedProject)
-   const background = 'bg-' + selectedProject
-   console.log(background);
+   
+   
 
   return (
     <div className='flex justify-center flex-col items-center mt-10'>
@@ -60,7 +60,8 @@ function ProjectCards(props) {
     animate={controls}
     initial="hidden"
     variants={squareVariants}
-    className={`xs:h-80 w-11/12 md:w-9/12 lg:w-7/12 h-56 md:h-96 flex justify-center items-center rounded-md mt-5 mb-5 ${background} bg-center bg-cover bg-no-repeat sm:bg-contain md:bg-contain `}>
+    style={{backgroundImage: `url(/${selectedProject}.jpg)`}}
+    className={`xs:h-80 w-11/12 md:w-9/12 lg:w-7/12 h-56 md:h-96 flex justify-center items-center rounded-md mt-5 mb-5  bg-center bg-cover bg-no-repeat sm:bg-contain md:bg-contain `}>
         { info && 
         <div className='bg-black/80 w-full  h-full text-white flex justify-center items-center flex-col'>
 
