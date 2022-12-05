@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 
-import {motion} from 'framer-motion'
+import {motion} from 'framer'
 import styles from './Arrow.module.css'
 
 function Arrow() {
