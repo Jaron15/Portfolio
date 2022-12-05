@@ -22,6 +22,9 @@ module.exports = {
         'xs': '450px',
         ...defaultTheme.screens,
       },
+      height: {
+        '78p': '78%'
+      }
     },
     fontFamily: {
       round: ['Poppins', 'sans-serif']
