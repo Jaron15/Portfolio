@@ -1,5 +1,5 @@
 import React from 'react'
-import {motion} from 'framer';
+import {motion} from 'framer-motion';
 
 const topTextAnimate = {
   y:[100,50,0],
