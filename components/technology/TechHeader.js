@@ -1,11 +1,12 @@
 
-import {Fragment, useEffect} from 'react';
+import {Fragment, useEffect, useState} from 'react';
 import {useAnimation, motion, useScroll, useTransform} from 'framer-motion';
 import { useRef } from "react";
 import React from 'react'
 import TechIcons from './TechIcons';
 
 function TechHeader() {
+    const [technology, setTechnology] = useState('Technologies')
     const textRef = useRef(null)
   const {scrollYProgress} = useScroll({
     target:textRef
@@ -15,6 +16,16 @@ function TechHeader() {
   const xPosAnimLine = useTransform(scrollYProgress, [1, .6, .2, 0], [ 250, 0, 0, -250, ])
   const scrollOpacity = useTransform(scrollYProgress, [1, .7, .3, 0 ], [0, 1, 1, 0])
 
+ const changeHeader = (title) => {
+    setTechnology(title)
+ }
+ useEffect(() => {
+    const timer = setTimeout(() => {
+        setTechnology('Technologies')
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, [technology]);
+  
   return (
     <Fragment>
    <div  className="bg-black" style={{height: 300, }}></div>
@@ -22,10 +33,10 @@ function TechHeader() {
       <motion.h1  
       className="text-white text-2xl font-round "
       style={{x:xPosAnim, opacity: scrollOpacity}}
-      >Technologies</motion.h1>
+      >{technology}</motion.h1>
       <motion.div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-56 " style={{x:xPosAnimLine, opacity: scrollOpacity,  height: 3, }}></motion.div>
       </div>
-      <TechIcons />
+      <TechIcons setTechnology={changeHeader} />
       <div style={{}}></div>
       </Fragment>
 
