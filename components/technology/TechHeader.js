@@ -1,6 +1,6 @@
 
 import {Fragment, useEffect, useState} from 'react';
-import {useAnimation, motion, useScroll, useTransform} from 'framer-motion';
+import { motion, useScroll, useTransform} from 'framer-motion';
 import { useRef } from "react";
 import React from 'react'
 import TechIcons from './TechIcons';
