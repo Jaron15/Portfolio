@@ -1,6 +1,6 @@
 # Portfolio
 React portfolio made using Next.js and Tailwind CSS. Framer motion is used for the animations.
-[Deployed Application](https://www.drumclass.org)
+[Deployed Application](https://myportfolio-jaron15.vercel.app/)
 
 # Features
 - Framer motion triggers animation as you scroll down the page 
