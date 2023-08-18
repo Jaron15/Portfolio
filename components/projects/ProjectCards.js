@@ -16,11 +16,11 @@ const projectDetailsArray = [
         deployedLink: 'https://www.drumclass.org/'
     },
     {
-        project: 'blackbearbakery',
-        name: 'Black Bear Bakery',
-        description: 'A full stack e-commerce bakery app. MongoDB and GraphQL on the backend and a React-Bootstrap frontend.',
-        githubLink: 'https://github.com/nicoguarino/Black-Bear-Bakery',
-        deployedLink: 'https://black-bear-bakery.herokuapp.com'
+        project: 'lifecompass',
+        name: 'Life Compass',
+        description: 'Life Compass is a powerful time management tool designed to help users stay organized and focused on what matters most to them. ',
+        githubLink: 'https://github.com/Jaron15/lifecompass',
+        deployedLink: 'https://lifecompass.vercel.app/'
     },
     {
         project: 'restaurantsearch',
