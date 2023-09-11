@@ -10,8 +10,8 @@ function Projects() {
           Projects
           </h1>
       </div>
-    <ProjectCards project='drumclass' />
     <ProjectCards project='lifecompass' />
+    <ProjectCards project='drumclass' />
     <ProjectCards project='restaurantsearch'/>
       <div style={{ height: 200 }}></div>
     </Fragment>
