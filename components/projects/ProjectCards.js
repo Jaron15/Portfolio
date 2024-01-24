@@ -23,11 +23,11 @@ const projectDetailsArray = [
         deployedLink: 'https://lifecompass.vercel.app/'
     },
     {
-        project: 'restaurantsearch',
-        name: 'Restaurant Search',
-        description: 'A React Native app that uses the yelp API to search for restaurants ',
-        githubLink: 'https://github.com/Jaron15/restaurant-search',
-        
+        project: 'grounded',
+        name: 'Grounded Electric',
+        description: 'A fully interactive website developed for Grounded Electrical Service, a local Arizona business, enhancing customer interaction and service accessibility.',
+        githubLink: 'https://github.com/Jaron15/GroundedElectrical',
+        deployedLink: 'https://www.groundedinaz.com/'
     },
 ]
 
@@ -61,11 +61,11 @@ function ProjectCards(props) {
     initial="hidden"
     variants={squareVariants}
     style={{backgroundImage: `url(/${selectedProject}.jpg)`}}
-    className={`xs:h-80 w-11/12 md:w-9/12 lg:w-7/12 h-56 md:h-96 flex justify-center items-center rounded-md mt-5 mb-5  bg-center bg-cover bg-no-repeat sm:bg-contain md:bg-contain `}>
+    className={`xs:h-80 w-11/12 md:w-9/12 lg:w-7/12 h-56 md:h-96 flex justify-center items-center rounded-md mt-5 mb-5  bg-center bg-contain bg-no-repeat sm:bg-contain md:bg-contain`}>
         { info && 
-        <div className='bg-black/80 w-full  h-full text-white flex justify-center items-center flex-col'>
+        <div className='bg-black/80 w-full  h-full text-white flex justify-center items-center flex-col overflow-auto'>
 
-            <div className='mb-5 underline underline-offset-2 font-semibold	
+            <div className='mb-2 xs:mb-5 underline underline-offset-2 font-semibold	
 '>
                 {projectDetails.name}    
             </div>
@@ -77,7 +77,7 @@ function ProjectCards(props) {
             <div className='flex '>
                 <div className='flex justify-center align-middle text-center flex-col mx-8'>
                     <div className='flex justify-center'>
-                        <a href={projectDetails.githubLink}>
+                        <a target="_blank" href={projectDetails.githubLink}>
                         <img src='/github.svg' className='w-11 text-center' />
                          </a>
                      </div>
@@ -86,7 +86,7 @@ function ProjectCards(props) {
 
                 { projectDetails.deployedLink && <div className='flex justify-center align-middle text-center flex-col mx-8 '>
                     <div className='flex justify-center'>
-                        <a href={projectDetails.deployedLink}>
+                        <a target="_blank" href={projectDetails.deployedLink}>
                         <img src='/web.svg' className='w-11 text-center' />
                         </a>
                     </div>

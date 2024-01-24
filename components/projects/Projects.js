@@ -11,8 +11,8 @@ function Projects() {
           </h1>
       </div>
     <ProjectCards project='lifecompass' />
+    <ProjectCards project='grounded'/>
     <ProjectCards project='drumclass' />
-    <ProjectCards project='restaurantsearch'/>
       <div style={{ height: 200 }}></div>
     </Fragment>
   );

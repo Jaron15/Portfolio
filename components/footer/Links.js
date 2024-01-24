@@ -19,7 +19,7 @@ function Links() {
         </a>
        
 
-        <a href='https://github.com/Jaron15' className='text-white bg-black hover:bg-white border-t-4 border-neutral-400 lg:border-none h-20 w-full lg:w-2/3 flex hover:text-black transition ease-in-out duration-1200'>
+        <a target="_blank" href='https://github.com/Jaron15' className='text-white bg-black hover:bg-white border-t-4 border-neutral-400 lg:border-none h-20 w-full lg:w-2/3 flex hover:text-black transition ease-in-out duration-1200'>
             <div className='flex justify-start items-center h-full  w-1/2 text-2xl pl-4 md:pl-6 font-semibold'>
             Github
             </div>
@@ -30,7 +30,7 @@ function Links() {
             </div>
         </a>
 
-        <a href='https://www.linkedin.com/in/jaron-kenyon-41917b217/' className='text-white bg-black hover:bg-white border-t-4 border-neutral-400 lg:border-none h-20 w-full lg:w-2/3 flex hover:text-black transition ease-in-out duration-1200'>
+        <a target="_blank" href='https://www.linkedin.com/in/jaron-kenyon-41917b217/' className='text-white bg-black hover:bg-white border-t-4 border-neutral-400 lg:border-none h-20 w-full lg:w-2/3 flex hover:text-black transition ease-in-out duration-1200'>
             <div className='flex justify-start items-center h-full   w-1/2 text-2xl pl-4 md:pl-6 font-semibold'>
             LinkedIn
             </div>
