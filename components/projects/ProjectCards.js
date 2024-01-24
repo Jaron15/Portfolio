@@ -77,7 +77,7 @@ function ProjectCards(props) {
             <div className='flex '>
                 <div className='flex justify-center align-middle text-center flex-col mx-8'>
                     <div className='flex justify-center'>
-                        <a target="_blank" href={projectDetails.githubLink}>
+                        <a target="_blank" rel="noreferrer noopener" href={projectDetails.githubLink}>
                         <img src='/github.svg' className='w-11 text-center' />
                          </a>
                      </div>
@@ -86,7 +86,7 @@ function ProjectCards(props) {
 
                 { projectDetails.deployedLink && <div className='flex justify-center align-middle text-center flex-col mx-8 '>
                     <div className='flex justify-center'>
-                        <a target="_blank" href={projectDetails.deployedLink}>
+                        <a target="_blank" rel="noreferrer noopener" href={projectDetails.deployedLink}>
                         <img src='/web.svg' className='w-11 text-center' />
                         </a>
                     </div>
